@@ -1,5 +1,9 @@
 const axios = require('axios');
 
+process.argv.forEach((val, index) => {
+  console.log(`${index}: ${val}`);
+});
+
 const args = process.argv.slice(2);
 var build = args[0];
 axios
